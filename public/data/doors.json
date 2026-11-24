@@ -1,0 +1,453 @@
+[
+    {
+        "day": 1,
+        "title": "Ole Lukøje",
+        "kind": "quiz",
+        "heading": "Eventyr-quiz",
+        "text": "Hvad har Ole Lukøje med, når han besøger børnene?",
+        "gift": {
+            "title": "En guide til 7 dages søvnchallenge"
+        },
+        "category": "quiz",
+        "options": [
+            "En lanterne",
+            "En paraply",
+            "En kuffert"
+        ],
+        "answer": 1,
+        "actions": {
+            "primary": "Send svar",
+            "secondary": "Se dagens gave",
+            "close": "Luk"
+        }
+    },
+    {
+        "day": 2,
+        "title": "Prinsessen på ærten",
+        "kind": "choice",
+        "heading": "Din anbefaling",
+        "text": "Hvordan har du det som natten?",
+        "gift": {
+            "title": "Få et gavekort på 100 DKK ved køb over 1000 DKK"
+        },
+        "category": "guide",
+        "options": [
+            "Jeg fryser let",
+            "Jeg sover varmt"
+        ],
+        "followUp": {
+            "text": "Hvilken hovedpudefasthed foretrækker du?",
+            "options": [
+                "Fast",
+                "Blød"
+            ]
+        },
+        "actions": {
+            "primary": "Se anbefalingen",
+            "secondary": "Kopiér rabatkode",
+            "close": "Luk"
+        }
+    },
+    {
+        "day": 3,
+        "title": "Den flyvende kuffert",
+        "kind": "story",
+        "heading": "Dagens søvntip",
+        "text": "Hold soveværelset køligt. Mange sover bedre ved omkring 16-18 grader.",
+        "gift": {
+            "title": "Pillow mist (kun for kundeklubbens medlemmer)"
+        },
+        "category": "tip",
+        "actions": {
+            "primary": "Gem tippet",
+            "secondary": "Indløs i kundeklubben",
+            "close": "Luk"
+        }
+    },
+    {
+        "day": 4,
+        "title": "Den lille Idas blomster",
+        "kind": "quiz",
+        "heading": "Eventyr-quiz",
+        "text": "Hvem fortæller Ida, at blomsterne har været til bal om natten?",
+        "gift": {
+            "title": "10% rabatkode"
+        },
+        "category": "quiz",
+        "options": [
+            "Hendes mor",
+            "Kongen",
+            "Studenteren"
+        ],
+        "answer": 2,
+        "actions": {
+            "primary": "Send svar",
+            "secondary": "Kopiér rabatkode",
+            "close": "Luk"
+        }
+    },
+    {
+        "day": 5,
+        "title": "Tommelise",
+        "kind": "choice",
+        "heading": "Juleafstemning",
+        "text": "Foretrækker du at sove med en sommerdyne, helårsdyne eller vinterdyne om vinteren?",
+        "gift": {
+            "title": "Søvnrytme design plakat - A4 print selv"
+        },
+        "category": "poll",
+        "options": [
+            "Sommerdyne",
+            "Helårsdyne",
+            "Vinterdyne"
+        ],
+        "actions": {
+            "primary": "Se resultatet",
+            "secondary": "Hent PDF",
+            "close": "Luk"
+        }
+    },
+    {
+        "day": 6,
+        "title": "Snemanden",
+        "kind": "choice",
+        "heading": "Personlighedstest",
+        "text": "Hvordan ser dit julepynt ud?",
+        "gift": {
+            "title": "Julehilsen fra Ringsted Dun"
+        },
+        "category": "personality-test",
+        "options": [
+            "Mange forskellige farver, jo flere des bedre",
+            "I rolige nuancer",
+            "Klassisk rød og grøn"
+        ],
+         "actions": {
+            "primary": "Næste spørgsmål",
+            "secondary": "Se julehilsen",
+            "close": "Luk"
+        }
+    },
+    {
+       "day": 7,
+        "title": "Den grimme ælling",
+        "kind": "quiz",
+        "heading": "Eventyr-quiz",
+        "text": "Hvilken årstid er det, da den grimme ælling opdager, at den er blevet til en smuk svane?",
+        "gift": {
+            "title": "Vind et besøg på Dykon fabrikken."
+        },
+        "category": "quiz",
+         "options": [
+            "Vinter",
+            "Forår",
+            "Efterår"
+        ], 
+         "answer": 1,
+        "actions": {
+            "primary": "Send svar",
+            "secondary": "Deltag i lodtrækningen for at vinde et besøg på Dykon fabrikken",
+            "close": "Luk"
+        }
+    },
+    {
+        "day": 8,
+        "title": "Nattergalen",
+        "kind": "story",
+        "heading": "Dagens søvntip",
+        "text": "Vidste du, at det faktisk er luften, der holder dig varm? Dun har en helt særlig evne til at holde på luft mellem deres små, fine strukturer. Luften fungerer som naturlig isolering og hjælper med at holde på kroppens varme. Derfor kan en dundyne være både let, luftig og dejlig varm, selv på de koldeste decembernætter. Det er lidt som at sove under sin egen lille, lune sky!",
+        "gift": {
+            "title": "En blød sovemaske til en mere behagelig nattesøvn (kun for kundeklubbens medlemmer)"
+        },
+        "category": "tip",
+        "actions": {
+            "primary": "Gem tippet",
+            "secondary": "Indløs i kundeklubben",
+            "close": "Luk"
+        }
+    },
+    {
+        "day": 9,
+        "title": "De vilde svaner",
+        "kind": "choice",
+        "heading": "Din anbefaling",
+        "text": "Hvilken position foretrækker du at sove i?",
+        "gift": {
+            "title": "Anbefaling baseret på sovestilling"
+        },
+        "category": "sleep-position-quiz",
+        "options": [
+            "På ryggen",
+            "På siden",
+            "På maven"
+        ],
+        "actions": {
+            "primary": "Se resultatet",
+            "secondary": "Se anbefaling",
+            "close": "Luk"
+        }
+    },
+    {
+        "day": 10,
+        "title": "Den standhaftige tinsoldat",
+        "kind": "choice",
+        "heading": "Juleafstemning",
+        "text": "Hvilken dyne foretrækker du på en kold vinternat?",
+        "gift": {
+            "title": "En PDF med tips til bedre søvn"
+        },
+        "category": "poll",
+        "options": [
+            "En ekstra varm og fyldig dyne",
+            "En let og luftig dyne med behagelig varme",
+            "En kølig dyne, jeg får hurtigt varmen!"
+        ],
+            "actions": {
+            "primary": "Se resultatet",
+            "secondary": "Hent PDF",
+            "close": "Luk"
+        }
+    },
+    {
+        "day": 11,
+        "title": "Lykkens galocher",
+        "kind": "choice",
+        "heading": "Gæt et produkt",
+        "text": "Hvilken serie tilhører billedet?",
+        "gift": {
+            "title": "Inspiration til et hyggeligt soveværelse"
+        },
+        "category": "guess-product",
+        "options": [
+            "Nattergalen",
+            "Klodshans",
+            "Prinsessen på ærten"
+        ],
+        "answer": 0,
+        "actions": {
+            "primary": "Se gæt",
+            "secondary": "Se inspiration",
+            "close": "Luk"
+        }
+    },
+    {
+        "day": 12,
+        "title": "Kejserens nye klæder",
+        "kind": "story",
+        "heading": "Sjov information om dun og fjer",
+        "text": "Vidste du, at dun ikke har en hård fjerstilk som almindelige fjer? Et dun består af masser af fine, bløde tråde, der breder sig i alle retninger, næsten som et lille snefnug. Denne særlige struktur gør dun i stand til at holde på luft og isolere mod kulden. Det er naturens egen lille genistreg, som gør din dundyne let, blød og dejlig lun på kolde decembernætter.",
+        "gift": {
+            "title": "Vind et besøg på Dykon fabrikken."
+        },
+        "category": "tip",
+            "actions": {
+            "primary": "Gem information",
+            "secondary": "Deltag i lodtrækningen for at vinde et besøg på Dykon fabrikken",
+            "close": "Luk"
+        }  
+    },
+    {
+        "day": 13,
+        "title": "Hyrdinden og skorstensfejeren",
+        "kind": "story",
+        "heading": "Dagens søvntip",
+        "text": "Julen kan være fuld af travlhed, men husk også at give dig selv tid til at koble af. Læg telefonen væk en halv time inden sengetid, og brug i stedet tiden på at læse en god bog eller lytte til rolig musik. En fast, hyggelig aftenrutine kan hjælpe kroppen med at finde ro og gøre det lettere at falde i søvn. Måske er et af H.C. Andersens eventyr den perfekte godnathistorie?",
+        "gift": {
+            "title": "VIP-adgang til tilbud"
+        },
+        "category": "tip",
+        "actions": {
+            "primary": "Gem tippet",
+            "secondary": "Klik her for at få VIP-adgang til tilbud",
+            "close": "Luk"
+        }  
+    },
+    {
+        "day": 14,
+        "title": "Lille Tuk",
+        "kind": "quiz",
+        "heading": "Eventyr-quiz",
+        "text": "Hvad lægger Lille Tuk under sin hovedpude i H.C. Andersens eventyr?",
+        "gift": {
+            "title": "Gratis juleplakat"
+        },
+        "category": "quiz",
+        "options": [
+            "En tryllesten",
+            "En geografibog",
+            "Et landkort"
+        ],
+        "answer": 1,
+        "actions": {
+            "primary": "Send svar",
+            "secondary": "Se dagens gave",
+            "close": "Luk"
+        }
+    },
+    {
+        "day": 15,
+        "title": "Fyrtøjet",
+        "kind": "choice",
+        "heading": "Juleafstemning",
+        "text": "Hvordan foretrækker du dit soveværelse er indrettet i decembermåned?",
+        "gift": {
+            "title": "Gratis vinter-moodboard"
+        },
+        "category": "poll",
+        "options": [
+            "Mnimalistisk",
+            "Pyntet med juledekorationer"
+        ],
+        "actions": {
+            "primary": "Send svar",
+            "secondary": "Se dagens gave",
+            "close": "Luk"
+        }
+    },
+    {
+        "day": 16,
+        "title": "Den lille havfrue",
+        "kind": "choice",
+        "heading": "Gæt et produkt",
+        "text": "Hvilken serie tilhører billedet?",
+        "gift": {
+            "title": "Hjælp til at vælge sommer-, vinter- eller helårsdyne"
+        },
+        "category": "guess-product",
+        "options": [
+            "Kiddy Royal Moskus",
+            "Kiddy Royal",
+            "Kiddy Royal Gås"
+        ],
+        "answer": 2,
+        "actions": {
+            "primary": "Se gæt",
+            "secondary": "Se dagens gave",
+            "close": "Luk"
+        } 
+    },
+    {
+        "day": 17,
+        "title": "Den gamle gadelygte",
+        "kind": "riddle",
+        "heading": "Gåde",
+        "text": "Jeg har fire ben, men går aldrig nogen vegne. Hver nat ligger du i mig. Hvad er jeg?",
+        "gift": {
+            "title": "Spotify-playliste til afslapning"
+        },
+        "category": "riddle",
+        "placeholder": "Skriv svar",
+        "answers": [
+            "seng",
+            "en seng",
+            "sengen"
+        ],
+        "actions": {
+            "primary": "Send svar",
+            "secondary": "Åbn playliste",
+            "close": "Luk"
+        }
+    },
+    {
+        "day": 18,
+        "title": "Det gamle egetræs sidste drøm",
+        "kind": "choice",
+        "heading": "Din anbefaling",
+        "text": "Hvilken stilling falder du oftest i søvn i?",
+        "gift": {
+            "title": "En særlig julekalenderrabat “ANDERSEN”"
+        },
+        "category": "guide",
+        "options": [
+        "På ryggen",
+        "På siden",
+        "På maven"
+    ],
+        "feedback": [
+        "Prøv en mellemhøj pude, og mærk efter, om hovedet hviler behageligt, uden at hagen skubbes frem.",
+        "Prøv en lidt højere pude, der udfylder pladsen mellem skulderen og hovedet, når du ligger på siden.",
+        "Prøv en lav, blød pude, så hovedet ikke løftes unødigt fra madrassen."
+    ],
+        "actions": {
+            "primary": "Se anbefalingen",
+            "secondary": "Kopiér rabatkode",
+            "close": "Luk"
+        }
+    },
+    {
+        "day": 19,
+        "title": "Nissen hos spækhøkeren",
+        "kind": "quiz",
+        "heading": "Eventyr-quiz",
+        "text": "Hvorfor vælger nissen i H.C. Andersens eventyr Nissen hos Spækhøkeren at blive boende hos spækhøkeren?",
+        "gift": {
+            "title": "PDF skabelon til søvnregistrering"
+        },
+        "category": "quiz",
+        "options": [
+            "Fordi han har sin egen lille seng på loftet",
+            "Fordi spækhøkeren fortæller ham eventyr hver aften",
+            "Fordi han får julegrød med en stor klat smør"
+        ],
+        "answer": 2,
+        "actions": {
+            "primary": "Send svar",
+            "secondary": "Hent PDF",
+            "close": "Luk"
+        }
+    },
+    {
+        "day": 20,
+        "title": "Bedstemoder",
+        "kind": "choice",
+        "heading": "Juleafstemning",
+        "text": "Hvad er den perfekte decemberaften for dig?",
+        "gift": {
+            "title": "Gratis julemotiv"
+        },
+        "category": "poll",
+        "options": [
+            "At putte mig under dynen og se en julefilm",
+            "At bage julesmåkager med familien",
+            "At spille spil og hygge med dem, jeg holder af"
+        ],
+        "actions": {
+            "primary": "Se resultatet",
+            "secondary": "Se dagens gave",
+            "close": "Luk"
+        }
+    },
+    {
+        "day": 21,
+        "title": "Grantræet",
+        "kind": "story",
+        "heading": "Sjov information om dun og fjer",
+        "text": "Vidste du, at dun kan genvinde deres fylde, efter at de har været presset sammen? Når du ryster din dyne let om morgenen, hjælper du dunene med at folde sig ud igen og fordele sig i dynen. Det giver plads til mere luft mellem dunene og hjælper med at bevare dynens blødhed og isoleringsevne. Et lille morgenritual, der gør dynen klar til endnu en nat med søde juledrømme.",
+        "gift": {
+            "title": "Gratis rådgivning . Personlig hjælp til valg af dyne og pude"
+        },
+        "category": "tip",
+        "actions": {
+            "primary": "Gem information",
+            "secondary": "Se dagens gave",
+            "close": "Luk"
+        }
+    },
+    {
+        "day": 22,
+        "title": "Snedronningen",
+        "kind": "story",
+        "heading": "Dagens søvntip",
+        "text": "Selvom december byder på julefrokoster, hyggelige aftener og ekstra mange aktiviteter, er det en god idé at holde fast i en nogenlunde fast søvnrytme. Prøv at gå i seng og stå op på omtrent samme tidspunkt hver dag. Det hjælper kroppens indre ur med at finde en naturlig rytme og kan gøre det lettere at falde i søvn. Giv dig selv en ekstra julegave i år, tid til en god nattesøvn.",
+        "gift": {
+            "title": "Fri fragt på næste ordre “JUL2026”"
+        },
+        "category": "tip",
+        "actions": {
+            "primary": "Gem tippet",
+            "secondary": "Kopiér rabatkode",
+            "close": "Luk"
+        }  
+    }
+    
+]
