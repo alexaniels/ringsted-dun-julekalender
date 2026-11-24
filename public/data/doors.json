@@ -26,7 +26,7 @@
         "title": "Prinsessen på ærten",
         "kind": "choice",
         "heading": "Din anbefaling",
-        "text": "Hvordan har du det som natten?",
+        "text": "Hvordan har du det om natten?",
         "gift": {
             "title": "Få et gavekort på 100 DKK ved køb over 1000 DKK"
         },
@@ -35,11 +35,19 @@
             "Jeg fryser let",
             "Jeg sover varmt"
         ],
+        "feedback": [
+            "Prøv at sammenligne dyner med en højere varmegrad.",
+            "Prøv at sammenligne lette dyner med en lavere varmegrad."
+        ],
         "followUp": {
             "text": "Hvilken hovedpudefasthed foretrækker du?",
             "options": [
                 "Fast",
                 "Blød"
+            ],
+            "feedback": [
+                "Prøv en fast hovedpude.",
+                "Prøv en blød hovedpude."
             ]
         },
         "actions": {
@@ -71,13 +79,13 @@
         "heading": "Eventyr-quiz",
         "text": "Hvem fortæller Ida, at blomsterne har været til bal om natten?",
         "gift": {
-            "title": "10% rabatkode"
+            "title": "Rabatkode til 10% rabat"
         },
         "category": "quiz",
         "options": [
             "Hendes mor",
             "Kongen",
-            "Studenteren"
+            "Studenten"
         ],
         "answer": 2,
         "actions": {
@@ -93,7 +101,7 @@
         "heading": "Juleafstemning",
         "text": "Foretrækker du at sove med en sommerdyne, helårsdyne eller vinterdyne om vinteren?",
         "gift": {
-            "title": "Søvnrytme design plakat - A4 print selv"
+            "title": "Søvnrytme plakat i A4 - print selv"
         },
         "category": "poll",
         "options": [
@@ -211,7 +219,7 @@
     {
         "day": 11,
         "title": "Lykkens galocher",
-        "kind": "choice",
+        "kind": "quiz",
         "heading": "Gæt et produkt",
         "text": "Hvilken serie tilhører billedet?",
         "gift": {
@@ -251,7 +259,7 @@
         "title": "Hyrdinden og skorstensfejeren",
         "kind": "story",
         "heading": "Dagens søvntip",
-        "text": "Julen kan være fuld af travlhed, men husk også at give dig selv tid til at koble af. Læg telefonen væk en halv time inden sengetid, og brug i stedet tiden på at læse en god bog eller lytte til rolig musik. En fast, hyggelig aftenrutine kan hjælpe kroppen med at finde ro og gøre det lettere at falde i søvn. Måske er et af H.C. Andersens eventyr den perfekte godnathistorie?",
+        "text": "Julen kan være travl, så husk at give dig selv tid til at koble af. Læg telefonen væk en halv time inden sengetid, og brug i stedet tiden på at læse en god bog eller lytte til rolig musik. En fast, hyggelig aftenrutine kan hjælpe kroppen med at finde ro og gøre det lettere at falde i søvn. Måske er et af H.C. Andersens eventyr den perfekte godnathistorie?",
         "gift": {
             "title": "VIP-adgang til tilbud"
         },
@@ -289,13 +297,13 @@
         "title": "Fyrtøjet",
         "kind": "choice",
         "heading": "Juleafstemning",
-        "text": "Hvordan foretrækker du dit soveværelse er indrettet i decembermåned?",
+        "text": "Hvordan foretrækker du, at dit soveværelse er indrettet i december?",
         "gift": {
             "title": "Gratis vinter-moodboard"
         },
         "category": "poll",
         "options": [
-            "Mnimalistisk",
+            "Minimalistisk",
             "Pyntet med juledekorationer"
         ],
         "actions": {
@@ -307,7 +315,7 @@
     {
         "day": 16,
         "title": "Den lille havfrue",
-        "kind": "choice",
+        "kind": "quiz",
         "heading": "Gæt et produkt",
         "text": "Hvilken serie tilhører billedet?",
         "gift": {
@@ -355,7 +363,8 @@
         "heading": "Din anbefaling",
         "text": "Hvilken stilling falder du oftest i søvn i?",
         "gift": {
-            "title": "En særlig julekalenderrabat “ANDERSEN”"
+            "title": "En særlig julekalenderrabat",
+            "code": "ANDERSEN"
         },
         "category": "guide",
         "options": [
@@ -381,7 +390,7 @@
         "heading": "Eventyr-quiz",
         "text": "Hvorfor vælger nissen i H.C. Andersens eventyr Nissen hos Spækhøkeren at blive boende hos spækhøkeren?",
         "gift": {
-            "title": "PDF skabelon til søvnregistrering"
+            "title": "PDF-skabelon til søvnregistrering"
         },
         "category": "quiz",
         "options": [
@@ -424,7 +433,7 @@
         "heading": "Sjov information om dun og fjer",
         "text": "Vidste du, at dun kan genvinde deres fylde, efter at de har været presset sammen? Når du ryster din dyne let om morgenen, hjælper du dunene med at folde sig ud igen og fordele sig i dynen. Det giver plads til mere luft mellem dunene og hjælper med at bevare dynens blødhed og isoleringsevne. Et lille morgenritual, der gør dynen klar til endnu en nat med søde juledrømme.",
         "gift": {
-            "title": "Gratis rådgivning . Personlig hjælp til valg af dyne og pude"
+            "title": "Gratis rådgivning - personlig hjælp til valg af dyne og pude"
         },
         "category": "tip",
         "actions": {
@@ -438,9 +447,10 @@
         "title": "Snedronningen",
         "kind": "story",
         "heading": "Dagens søvntip",
-        "text": "Selvom december byder på julefrokoster, hyggelige aftener og ekstra mange aktiviteter, er det en god idé at holde fast i en nogenlunde fast søvnrytme. Prøv at gå i seng og stå op på omtrent samme tidspunkt hver dag. Det hjælper kroppens indre ur med at finde en naturlig rytme og kan gøre det lettere at falde i søvn. Giv dig selv en ekstra julegave i år, tid til en god nattesøvn.",
+        "text": "Selvom december byder på julefrokoster, hyggelige aftener og ekstra mange aktiviteter, er det en god idé at holde fast i en nogenlunde fast søvnrytme. Prøv at gå i seng og stå op på omtrent samme tidspunkt hver dag. Det hjælper kroppens indre ur med at finde en naturlig rytme og kan gøre det lettere at falde i søvn. Giv dig selv en ekstra julegave i år - tid til en god nattesøvn.",
         "gift": {
-            "title": "Fri fragt på næste ordre “JUL2026”"
+            "title": "Fri fragt på næste ordre",
+            "code": "JUL2026"
         },
         "category": "tip",
         "actions": {
@@ -448,6 +458,50 @@
             "secondary": "Kopiér rabatkode",
             "close": "Luk"
         }  
-    }
-    
+    },
+    {
+        "day": 23,
+        "title": "Verdens dejligste rose",
+        "kind": "quiz",
+        "heading": "Eventyr-quiz",
+        "text": "Hvor mange timers søvn anbefales typisk til voksne?",
+        "gift": {
+            "title": "VIP-rabatkode"
+        },
+        "category": "quiz",
+        "options": [
+            "5-6 timer",
+            "7-9 timer",
+            "10-12 timer"
+        ], 
+        "answer": 1,
+        "actions": {
+            "primary": "Send svar",
+            "secondary": "Kopiér rabatkode",
+            "close": "Luk"
+        } 
+    },
+    {
+        "day": 24,
+        "title": "Den lille pige med svovlstikkerne",
+        "kind": "riddle",
+        "heading": "Gåde",
+        "text": "Hvilke nødder har ingen skal?",
+        "gift": {
+            "title": "Svar rigtigt på gåden og vær med i lodtrækningen om at vinde en dyne"
+        },
+        "category": "riddle",
+        "placeholder": "Skriv svar",
+        "answers": [
+            "pebernød",
+            "en pebernød",
+            "pebernødder",
+            "pebernødderne"
+        ],
+        "actions": {
+            "primary": "Send svar",
+            "secondary": "Deltag i lodtrækning",
+            "close": "Luk"
+        }
+    } 
 ]
