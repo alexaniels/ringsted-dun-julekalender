@@ -4,6 +4,7 @@ import { loadDoors } from '../../api/loadDoors'
 import type { CalendarDoor } from '../../types/calendar'
 import { getCalendarDay, readOpenedDoors, saveOpenedDoors } from '../../utils/calendarProgress'
 import Door from './Door'
+import DoorStatusIcon from '../atoms/DoorStatusIcon'
 
 export default function Calendar() {
     const [doors, setDoors] = useState<CalendarDoor[]>([])
@@ -43,8 +44,8 @@ export default function Calendar() {
     }
 
     return (
-        <section aria-labelledby="calendar-heading">
-            <h2 id="calendar-heading">Julekalenderens låger</h2>
+        <section className="calendar" aria-labelledby="calendar-heading">
+            <h2 className="visually-hidden" id="calendar-heading" tabIndex={-1}>Julekalenderens låger</h2>
 
             {error && <p role="alert">Lågerne kunne ikke indlæses.</p>}
 
@@ -54,24 +55,31 @@ export default function Calendar() {
 
             {doors.length > 0 && (
                 <>
-                    <p role="status">{opened.length} af {doors.length} låger åbnet</p>
-                    {today === 0 && <p>Den første låge åbner 1. december.</p>}
+                    <p className="visually-hidden" role="status">{opened.length} af {doors.length} låger åbnet</p>
+                    {today === 0 && <p className="visually-hidden">Den første låge åbner 1. december.</p>}
                     {storageError && (
                         <p role="status">Din fremgang kunne ikke gemmes i browseren.</p>
                     )}
 
-                    <ol>
+                    <ol className="door-grid" role="list">
                         {doors.map(door => (
                             <li key={door.day} value={door.day}>
                                 <Door
                                     door={door}
                                     locked={door.day > today}
+                                    isToday={door.day === today}
                                     opened={opened.includes(door.day)}
                                     onOpen={() => markOpened(door.day)}
                                 />
                             </li>
                         ))}
                     </ol>
+
+                    <ul className="door-legend" role="list" aria-label="Forklaring af lågeikoner">
+                        <li><DoorStatusIcon kind="locked" /> Låst</li>
+                        <li><DoorStatusIcon kind="unlocked" /> Åbnet</li>
+                        <li><DoorStatusIcon kind="gift" /> Åben i dag</li>
+                    </ul>
                 </>
             )}
         </section>

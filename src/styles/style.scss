@@ -13,25 +13,25 @@ body {
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: transform 0.1s, background 0.2s;
+  transition: transform 0.1s, background 0.2s; // codex vejledning
 
   &:hover {
-    transform: translateY(-1px);
+    transform: translateY(-1px); // codex vejledning
   }
 
-  &--primary {
-    background: #c0392b;
-    color: #fff;
+&--primary {
+  background: partial.$prim-red;
+  color: partial.$prim-white;
 
-    &:hover {
-      background: #a93226;
-    }
+  &:hover {
+    background: partial.$chri-cranb;
   }
+}
 
-  &--secondary {
-    background: #fff;
-    color: #c0392b;
-    border: 2px solid #c0392b;
+&--secondary {
+  background: partial.$prim-white;
+  color: partial.$prim-red;
+  border: 2px solid partial.$prim-red;
   }
 }
 
@@ -40,11 +40,253 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
-  background: #165b33;
-  color: #fff;
+  background: partial.$prim-white;
+  color: partial.$prim-black;
 
   &__title {
     margin: 0;
     font-size: 1.5rem;
+    font-weight: 400;
   }
+}
+
+// AI assistance: Codex helped implement the responsive Figma layouts.
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  color: partial.$prim-black;
+  background: partial.$prim-white;
+  line-height: 1.5;
+}
+
+button, input { font: inherit; }
+:focus-visible { outline: 3px solid #245889; outline-offset: 4px; }
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  z-index: 1;
+  padding: .65rem 1rem;
+  background: partial.$prim-white;
+  color: partial.$prim-black;
+  transform: translateY(-200%);
+  &:focus { transform: none; }
+}
+
+.calendar-hero {
+  background: partial.$chri-cranb;
+  text-align: center;
+
+  img { display: block; width: min(100%, 44rem); margin: auto; }
+}
+
+.calendar-intro {
+  background: partial.$chri-wmilk;
+  padding: 1.25rem 1rem 2rem;
+  text-align: center;
+  p { margin: 0; }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.calendar {
+  position: relative;
+  max-width: 72rem;
+  margin-inline: auto;
+  padding: 1.5rem clamp(1rem, 5vw, 3rem) 3rem;
+}
+
+.door-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(.65rem, 3vw, 1.5rem);
+  list-style: none;
+  padding: 0;
+
+  @media (min-width: 43rem) { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  @media (min-width: 62rem) { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+}
+
+.door-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: .65rem 1rem;
+  list-style: none;
+  padding: 0;
+  margin: clamp(1.25rem, 5vw, 2.5rem) 0 0;
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+  }
+
+  svg { width: clamp(1.4rem, 4vw, 2rem); height: auto; flex: none; }
+}
+
+.door-tile {
+  position: relative;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: .2rem;
+  width: 100%;
+  min-height: 5.75rem;
+  padding: .5rem .15rem;
+  border: 1.5px solid partial.$prim-red;
+  border-radius: 1rem;
+  background: partial.$prim-white;
+  color: partial.$prim-black;
+  text-align: center;
+  font-size: .875rem;
+
+  &__number { font-size: clamp(1.6rem, 5vw, 2.6rem); line-height: 1.15; }
+
+  &__status-icon {
+    position: absolute;
+    left: .65rem;
+    bottom: .6rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    svg { display: block; width: 100%; height: 100%; }
+  }
+
+  &--today { background: partial.$prim-red; color: partial.$prim-white; }
+  &--available { background: partial.$chri-wmilk; }
+  &--locked { background: partial.$chri-eggn; border-color: transparent; }
+}
+
+button.door-tile { cursor: pointer; }
+
+.door-dialog {
+  width: min(70rem, calc(100% - 2rem));
+  max-height: calc(100dvh - 2rem);
+  padding: 0;
+  border: 0;
+  border-radius: 1.5rem;
+  background: partial.$chri-wmilk;
+  color: partial.$prim-black;
+
+  &::backdrop { background: rgb(0 0 0 / 60%); }
+  &__layout { display: grid; }
+  &__art {
+    display: block;
+    width: 100%;
+    height: clamp(13rem, 48vw, 23rem);
+    object-fit: cover;
+    object-position: center 28%;
+  }
+
+  &__content {
+    min-width: 0;
+    padding: clamp(1.25rem, 4vw, 2rem);
+    overflow-wrap: anywhere;
+  }
+
+  h2 { color: partial.$prim-red; line-height: 1.12; font-size: clamp(1.9rem, 4vw, 3rem); }
+  h2, h3 { margin: .25rem 0 .75rem; }
+  p { margin: .25rem 0 .7rem; }
+  &__product { width: min(100%, 10rem); margin-bottom: .6rem; }
+
+  form {
+    border: 2px solid partial.$chri-eggn;
+    border-radius: 1.2rem;
+    padding: clamp(.75rem, 3vw, 1.2rem);
+    background: partial.$prim-white;
+  }
+
+  fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0 0 .8rem;
+    min-inline-size: 0;
+  }
+
+  fieldset label {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    min-height: 44px;
+    margin-top: .5rem;
+    padding: .5rem .7rem;
+    border: 1px solid #817968;
+    border-radius: .7rem;
+  }
+
+  input[type="radio"] { flex: none; accent-color: partial.$prim-red; }
+  input[type="text"] {
+    display: block;
+    width: 100%;
+    min-height: 44px;
+    margin: .5rem 0 .75rem;
+    border: 1px solid #817968;
+    border-radius: .6rem;
+    padding: .5rem;
+  }
+
+  button {
+    min-height: 44px;
+    max-width: 100%;
+    padding: .65rem 1rem;
+    border: 2px solid partial.$prim-red;
+    border-radius: .7rem;
+    background: partial.$prim-red;
+    color: partial.$prim-white;
+    cursor: pointer;
+  }
+
+  &__feedback:empty { margin: 0; }
+
+  &__actions {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr) auto;
+    gap: .75rem;
+    align-items: stretch;
+  }
+
+  &__actions &__secondary {
+    background: partial.$chri-spruce;
+    border-color: partial.$chri-spruce;
+    color: partial.$prim-white;
+    opacity: 1;
+    cursor: default;
+  }
+
+  &__actions &__close { background: transparent; color: partial.$prim-black; }
+
+  @media (min-width: 56rem) {
+    &__layout { grid-template-columns: 45% 55%; }
+    &__art { height: 100%; min-height: 32rem; }
+  }
+
+  @media (max-width: 35rem) {
+    width: 100%;
+    max-width: none;
+    max-height: 100dvh;
+    border-radius: 0;
+    &__actions { grid-template-columns: 1fr; }
+    button { width: 100%; }
+  }
+}
+
+.gift-card {
+  margin-block: 1rem;
+  padding: .75rem 1rem;
+  border-radius: .7rem;
+  background: partial.$prim-red;
+  color: partial.$prim-white;
+
+  p { margin-block: .1rem; }
+
 }
