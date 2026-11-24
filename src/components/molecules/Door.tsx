@@ -5,9 +5,12 @@ import type { CalendarDoor } from '../../types/calendar'
 
 interface DoorProps {
     door: CalendarDoor
+    locked: boolean
+    opened: boolean
+    onOpen: () => void
 }
 
-export default function Door({ door }: DoorProps) {
+export default function Door({ door, locked, opened, onOpen }: DoorProps) {
     const dialog = useRef<HTMLDialogElement>(null)
     const openButton = useRef<HTMLButtonElement>(null)
     const titleId = useId()
@@ -27,16 +30,25 @@ export default function Door({ door }: DoorProps) {
         openButton.current?.focus()
     }
 
+    if (locked) {
+        return <span>{door.title} · Låst</span>
+    }
+
+    const status = opened ? 'Åbnet' : 'Kan åbnes'
+
     return (
         <>
             <button
                 ref={openButton}
                 type="button"
                 aria-haspopup="dialog"
-                aria-label={`Låge ${door.day}. ${door.title}`}
-                onClick={() => dialog.current?.showModal()}
+                aria-label={`Låge ${door.day}. ${door.title}. ${status}`}
+                onClick={() => {
+                    dialog.current?.showModal()
+                    onOpen()
+                }}
             >
-                {door.title}
+                {door.title} · {status}
             </button>
 
             <dialog
