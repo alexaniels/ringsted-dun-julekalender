@@ -1,6 +1,6 @@
 // AI assistance: Codex helped draft the door dialog and quiz feedback.
 import { useId, useRef, useState } from 'react'
-import type { FormEvent } from 'react'
+import type { SubmitEvent } from 'react'
 import type { CalendarDoor } from '../../types/calendar'
 
 interface DoorProps {
@@ -17,7 +17,7 @@ export default function Door({ door, locked, opened, onOpen }: DoorProps) {
     const [selectedIndex, setSelectedIndex] = useState<number | null>(null)
     const [feedback, setFeedback] = useState('')
 
-    function checkQuizAnswer(event: FormEvent<HTMLFormElement>) {
+   function checkQuizAnswer(event: SubmitEvent<HTMLFormElement>) {
         event.preventDefault()
         if (door.kind !== 'quiz' || selectedIndex === null) return
 
