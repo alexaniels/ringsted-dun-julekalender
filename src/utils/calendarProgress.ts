@@ -2,8 +2,8 @@
 export const YEAR = 2026
 const storageKey = `ringsted-dun-opened-${YEAR}`
 
-//export function getCalendarDay(date = new Date()): number {
-export function getCalendarDay(date = new Date('2026-12-25T12:00:00+01:00')): number { // brugt til at teste kalenderen
+export function getCalendarDay(date = new Date()): number {
+//export function getCalendarDay(date = new Date('2026-12-25T12:00:00+01:00')): number { // brugt til at teste kalenderen, ændre 25T fra 2026-12-25T til andet tal, for at teste mindre dage
     const parts = new Intl.DateTimeFormat('da-DK', {
         timeZone: 'Europe/Copenhagen',
         year: 'numeric',

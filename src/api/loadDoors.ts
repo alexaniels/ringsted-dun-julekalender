@@ -1,4 +1,6 @@
 // AI assistance: Codex helped draft the JSON loading and error handling.
+// Vi har forholdt os kritisk til Codex's output og bedt om dybere forståelse af elementerne og deres funktion.
+
 import type { CalendarDoor } from '../types/calendar'
 
 export async function loadDoors(): Promise<CalendarDoor[]> {

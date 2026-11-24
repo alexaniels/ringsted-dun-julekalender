@@ -51,6 +51,7 @@ body {
 }
 
 // AI assistance: Codex helped implement the responsive Figma layouts.
+// Codex er blevet brugt til resten af stylingen, men vi har forholdt os kritisk til Codex's output og bedt om dybere forståelse af elementerne og deres funktion.
 *, *::before, *::after { box-sizing: border-box; }
 
 body {
@@ -288,5 +289,4 @@ button.door-tile { cursor: pointer; }
   color: partial.$prim-white;
 
   p { margin-block: .1rem; }
-
 }

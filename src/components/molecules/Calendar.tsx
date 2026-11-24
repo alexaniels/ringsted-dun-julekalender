@@ -1,4 +1,6 @@
 // AI assistance: Codex helped draft the React data loading, date locking and saved progress.
+// Vi har forholdt os kritisk til Codex's output og bedt om dybere forståelse af elementerne og deres funktion.
+
 import { useEffect, useState } from 'react'
 import { loadDoors } from '../../api/loadDoors'
 import type { CalendarDoor } from '../../types/calendar'

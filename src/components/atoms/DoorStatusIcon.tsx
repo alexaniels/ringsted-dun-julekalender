@@ -1,3 +1,6 @@
+// AI assistance: Codex helped create the reusable door status icons and hide decorative SVGs from screen readers.
+// Vi har forholdt os kritisk til Codex's output og bedt om dybere forståelse af elementerne og deres funktion.
+
 type DoorIconKind = 'locked' | 'unlocked' | 'gift'
 
 export default function DoorStatusIcon({ kind }: { kind: DoorIconKind }) {

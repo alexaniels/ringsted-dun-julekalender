@@ -1,4 +1,6 @@
 // AI assistance: Codex helped draft the door dialog and activity handling.
+// Vi har forholdt os kritisk til Codex's output og bedt om dybere forståelse af elementerne og deres funktion.
+
 import { useId, useRef, useState } from 'react'
 import type { SubmitEvent } from 'react'
 import DoorStatusIcon from '../atoms/DoorStatusIcon'
