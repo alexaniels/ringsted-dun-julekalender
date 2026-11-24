@@ -1,3 +1,4 @@
+// AI assistance: Codex helped drafting.
 import type { ReactNode } from 'react'
 
 type HeadingProps = {

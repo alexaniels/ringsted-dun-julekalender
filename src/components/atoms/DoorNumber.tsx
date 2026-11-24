@@ -1,3 +1,4 @@
+// AI assistance: Codex helped drafting.
 type DoorNumberProps = {
   day: number;
 };

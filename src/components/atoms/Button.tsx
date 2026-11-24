@@ -1,3 +1,4 @@
+// AI assistance: Codex helped drafting.
 import type { ButtonHTMLAttributes, ReactNode } from "react";
 
 type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
