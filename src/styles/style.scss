@@ -6,3 +6,45 @@ body {
     font-family: partial.$font;
 }
 
+.btn {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.1s, background 0.2s;
+
+  &:hover {
+    transform: translateY(-1px);
+  }
+
+  &--primary {
+    background: #c0392b;
+    color: #fff;
+
+    &:hover {
+      background: #a93226;
+    }
+  }
+
+  &--secondary {
+    background: #fff;
+    color: #c0392b;
+    border: 2px solid #c0392b;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: #165b33;
+  color: #fff;
+
+  &__title {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+}
